@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap"rel="stylesheet"/>
         <link rel="stylesheet" href="./Css/style.css" />
         <!--swiper cdn-->
-        <linkrel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
     </head>
     <body>
@@ -60,10 +60,11 @@
                         <h5>Brokerages</h5>
                         <p>We act as an intermediary between buyers and sellers. Our fees are friendly and terms are very friendly</p>
                     </article>
-                    <article class="category"></article>
+                    <article class="category">
                         <span class="category__icon"><i class="uil uil-megaphone"></i></span>
                         <h5>Marketting</h5>
                         <p> We do all forms of Marketting from product, price, place, promotion. Reach us today</p>
+                    </article>
                     <article class="category">
                         <span class="category__icon"><i class="uil uil-sorting"></i></span>
                         <h5>Lending</h5>
@@ -323,9 +324,12 @@
 
 
         <footer class="footer">
-            <div class="container footer__container">
+            <div class="footer__container">
                 <div class="footer__1">
                     <a href="index.html" class="footer__logo"><h4>KEEVADIS</h4></a>
+                    <p>
+                        Our vision is to provide the best for your real estate needs.
+                    </p>
                 </div>
                 <div class="footer__2">
                     <h4>permalinks</h4>
@@ -352,7 +356,16 @@
                     </div>
                     <ul class="socials">
                         <li>
-                            <a href="@tweetofsins"><i class="uil uil-twitter"></i></a>
+                            <a href="https://instagram.com.com/@tweetofsins"><i class="uil uil-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="uil uil-facebook-messenger"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="uil uil-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/@tweetofsins"><i class="uil uil-google"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -369,18 +382,17 @@
 
         <script>
             var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "auto",
+            slidesPerView: 1,
             spaceBetween: 30,
-            pagination: 
-            {
+            pagination:{
             el: ".swiper-pagination",
             clickable: true,
-            breakpoints:{
-                600:{
-                slidesPerView:2
-            }
-            }
             },
+            breakpoints: {
+                600: {
+                slidesPerView:2
+                }
+            }
         });
         </script>
     </body>
