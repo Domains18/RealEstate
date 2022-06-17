@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255,255,255,0.7);
+    --color-black: black;
+    --color-bg: #1f2641;
+    --colot-bg1: #2e3267;
+    --color-bg2: #424890;
+    
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm:94%;
+
+    --transition: all 400 ease;
+}
+
+body{
+    font-family: 'Joan', serif;
+    line-height: 1.7;
+    color: var(--color-white);
+    background: var(--color-bg);
+}
+
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+
+section{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+h1,h2,h3,h4,h5{
+    line-height: 2.4rem;
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 13.rem;
+}
+
+a{
+    color: var(--color-white);
+}
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn{
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-primary{
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+nav{
+    background: transparent;
+    width:100vw;
+    height: 5rem;
+    top: 0;
+    position: fixed;
+    z-index: 11;
+}
+
+.va__container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav button{
+    display: none;
+}
+.nav__menu{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav__menu a{
+    font-size: 0.9rem;
+    transition: all 400ms ease;
+}
+
+.nav__menu a:hover{
+    color: var(--color-bg2);
+}
+
+header{
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+}
+
+.heaader__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+}
+
+
