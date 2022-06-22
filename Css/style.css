@@ -86,6 +86,7 @@ img{
     color: var(--color-white);
 }
 
+
 nav{
     background: transparent;
     width:100vw;
@@ -95,7 +96,7 @@ nav{
     z-index: 11;
 }
 
-.va__container{
+.nav__container{
     height: 100%;
     display: flex;
     justify-content: space-between;
