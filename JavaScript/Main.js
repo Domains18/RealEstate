@@ -1,4 +1,3 @@
-alert('Welcome to Keevadis Agencies');
 //changing navigation bar styles on scrolls
 
 window.addEventListener('scroll', () =>{
